@@ -1,0 +1,17 @@
+const mongoose = require('mongoose')
+
+const departmentSchema = new mongoose.Schema({
+  name: {
+    type: String,
+    required: true,
+    unique: true
+  },
+  isActive: {
+    type: Boolean,
+    default: true
+  }
+
+}, { timestamps: true });
+
+const  departmentModel = mongoose.model("Department", departmentSchema);
+module.exports = departmentModel
