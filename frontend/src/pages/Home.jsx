@@ -43,7 +43,7 @@ const Home = () => {
         >
           {/* NAVBAR */}
           <Navbar />
-          <div className="flex-grow flex flex-col justify-center px-6 md:px-18">
+          <div className="grow flex flex-col justify-center px-6 md:px-18">
             <h1 className="text-white font-heading text-4xl md:text-5xl md:mt-10 md:ml-9 font-bold">
               <span className="block border-b-4 pt-6 border-orange-500 pb-2 w-fit">
                 Your Health,
@@ -84,7 +84,7 @@ const Home = () => {
             <img
               src="/doctor2.jpg"
               alt="doctor"
-              className="rounded-full h-64 w-64 md:h-[400px] md:w-[400px] object-cover shadow-[0_20px_50px_rgba(0,0,0,0.2)]"
+              className="rounded-full h-64 w-64 md:h-100 md:w-100 object-cover shadow-[0_20px_50px_rgba(0,0,0,0.2)]"
             />
           </div>
         </section>
@@ -99,7 +99,7 @@ const Home = () => {
 
 
           <div className="grid md:grid-cols-2 gap-8">
-            <div className="bg-white p-6 min-h-[180px] rounded-xl shadow-[10px_10px_20px] shadow-slate-300 flex flex-col sm:flex-row justify-start transition-all hover:shadow-2xl">
+            <div className="bg-white p-6 min-h-45 rounded-xl shadow-[10px_10px_20px] shadow-slate-300 flex flex-col sm:flex-row justify-start transition-all hover:shadow-2xl">
               <div className="flex flex-row sm:flex-col justify-center items-center border-b-2 sm:border-b-0 sm:border-r-2 w-full sm:w-36 border-orange-500 pb-4 sm:pb-0 sm:pr-4">
                 <h3 className="text-xl md:text-2xl sm:-rotate-90 whitespace-nowrap font-bold text-blue-900 font-heading">
                   Safety and <br/> Security
@@ -114,7 +114,7 @@ const Home = () => {
               </div>
             </div>
 
-            <div className="bg-white p-6 min-h-[180px] rounded-xl shadow-[-10px_10px_20px] shadow-slate-300 flex flex-col sm:flex-row justify-start transition-all hover:shadow-2xl">
+            <div className="bg-white p-6 min-h-45 rounded-xl shadow-[-10px_10px_20px] shadow-slate-300 flex flex-col sm:flex-row justify-start transition-all hover:shadow-2xl">
               <div className="flex flex-row sm:flex-col justify-center items-center border-b-2 sm:border-b-0 sm:border-r-2 w-full sm:w-36 border-orange-500 pb-4 sm:pb-0 sm:pr-4">
                 <h3 className="text-xl md:text-2xl sm:-rotate-90 whitespace-nowrap font-bold text-blue-900 font-heading">
                   Efficient <br/>Operations
@@ -128,7 +128,7 @@ const Home = () => {
                 </ul>
               </div>
             </div>
-            <div className="bg-white p-6 min-h-[180px] rounded-xl shadow-[10px_-10px_20px] shadow-slate-300 flex flex-col sm:flex-row justify-start transition-all hover:shadow-2xl">
+            <div className="bg-white p-6 min-h-45 rounded-xl shadow-[10px_-10px_20px] shadow-slate-300 flex flex-col sm:flex-row justify-start transition-all hover:shadow-2xl">
               <div className="flex flex-row sm:flex-col justify-center items-center border-b-2 sm:border-b-0 sm:border-r-2 w-full sm:w-36 border-orange-500 pb-4 sm:pb-0 sm:pr-4">
                 <h3 className="text-xl md:text-2xl sm:-rotate-90 whitespace-nowrap font-bold text-blue-900 font-heading">
                   Financial <br/>Transparency
@@ -143,7 +143,7 @@ const Home = () => {
               </div>
             </div>
 
-            <div className="bg-white p-6 min-h-[180px] rounded-xl shadow-[-10px_-10px_20px] shadow-slate-300 flex flex-col sm:flex-row justify-start transition-all hover:shadow-2xl w-full">
+            <div className="bg-white p-6 min-h-45 rounded-xl shadow-[-10px_-10px_20px] shadow-slate-300 flex flex-col sm:flex-row justify-start transition-all hover:shadow-2xl w-full">
               <div className="flex flex-row sm:flex-col justify-center items-center border-b-2 sm:border-b-0 sm:border-r-2 w-full sm:w-36 border-orange-500 pb-4 sm:pb-0 sm:pr-4">
                 <h3 className="text-xl md:text-2xl sm:-rotate-90 whitespace-nowrap font-bold text-blue-900 font-heading">
                   Patient <br/>Satisfaction
@@ -172,7 +172,7 @@ const Home = () => {
 
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-10 px-6 md:px-10 max-w-7xl mx-auto items-center">
             {/* FREE */}
-            <div className="bg-radial from-indigo-200 via-indigo-150 via-indigo-50 to-indigo-50 min-h-[450px] p-8 rounded-2xl border border-[#000080] shadow-sm flex flex-col justify-center items-center hover:shadow-xl transition-all duration-300 w-full max-w-sm mx-auto">
+            <div className="bg-radial from-indigo-200 via-indigo-150 via-indigo-50 to-indigo-50 min-h-112.5 p-8 rounded-2xl border border-[#000080] shadow-sm flex flex-col justify-center items-center hover:shadow-xl transition-all duration-300 w-full max-w-sm mx-auto">
               <h3 className="text-3xl font-bold text-strt font-heading">FREE</h3>
               <p className="text-5xl font-bold mt-4 text-sart"><span className="text-3xl font-semibold">₹</span>0</p>
               <div className="w-20 h-8 border-b-4 border-[#000080]"></div>
@@ -189,7 +189,7 @@ const Home = () => {
             </div>
 
             {/* PRO */}
-            <div className="bg-radial from-gray-300 via-gray-150 via-white to-white p-8 rounded-2xl min-h-[500px] border border-blue-900 shadow-xl lg:scale-105 flex flex-col justify-center items-center hover:shadow-2xl transition-all duration-300 w-full max-w-sm mx-auto relative z-10">
+            <div className="bg-radial from-gray-300 via-gray-150 via-white to-white p-8 rounded-2xl min-h-125 border border-blue-900 shadow-xl lg:scale-105 flex flex-col justify-center items-center hover:shadow-2xl transition-all duration-300 w-full max-w-sm mx-auto relative z-10">
               <h3 className="text-2xl font-bold">PRO</h3>
               <p className="text-5xl font-bold mt-4"><span className="text-3xl font-semibold">₹</span>5000</p>
               <div className="w-20 h-8 border-b-4 border-orange-500"></div>
@@ -208,7 +208,7 @@ const Home = () => {
             </div>
 
             {/* BASIC */}
-            <div className="bg-radial from-indigo-200 via-indigo-150 via-indigo-50 to-indigo-50 min-h-[450px] p-8 rounded-2xl border border-blue-900 shadow-sm flex flex-col justify-center items-center hover:shadow-xl transition-all duration-300 w-full max-w-sm mx-auto">
+            <div className="bg-radial from-indigo-200 via-indigo-150 via-indigo-50 to-indigo-50 min-h-112.5 p-8 rounded-2xl border border-blue-900 shadow-sm flex flex-col justify-center items-center hover:shadow-xl transition-all duration-300 w-full max-w-sm mx-auto">
               <h3 className="text-2xl font-bold">BASIC</h3>
               <p className="text-5xl font-bold mt-4"><span className="text-3xl font-semibold">₹</span>1000</p>
               <div className="w-20 h-8 border-b-4 border-[#000080]"></div>
@@ -232,17 +232,24 @@ const Home = () => {
             Our <span className="text-[#000080]">Gallery</span>
           </h2>
 
-          <div
-            ref={sliderRef}
-            className="flex gap-6 overflow-hidden px-8 infinite scroll-smooth"
-          >
-            {Array.from({ length: 12 }).map((_, i) => (
-              <div
-                key={i}
-                className="min-w-60 h-48 bg-cover bg-center rounded-lg shadow-lg hover:scale-105 transition duration-300"
-                style={{ backgroundImage: `url('/hos-img/hos${i + 1}.jpg')` }}
-              />
-            ))}
+          <div className="relative overflow-hidden w-full px-8">
+            <div className="flex gap-6 animate-marquee whitespace-nowrap">
+              {Array.from({ length: 12 }).map((_, i) => (
+                <div
+                  key={i}
+                  className="min-w-60 h-48 bg-cover bg-center rounded-lg shadow-lg hover:scale-105 transition duration-300 inline-block"
+                  style={{ backgroundImage: `url('/hos-img/hos${i + 1}.jpg')` }}
+                />
+              ))}
+              {/* Duplicate for infinite effect */}
+              {Array.from({ length: 12 }).map((_, i) => (
+                <div
+                  key={"dup-" + i}
+                  className="min-w-60 h-48 bg-cover bg-center rounded-lg shadow-lg opacity-70 transition duration-300 inline-block"
+                  style={{ backgroundImage: `url('/hos-img/hos${i + 1}.jpg')` }}
+                />
+              ))}
+            </div>
           </div>
         </section>
 

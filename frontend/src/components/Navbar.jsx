@@ -30,7 +30,7 @@ const Navbar = () => {
   }, []);
 
   return (
-    <div className="w-full flex justify-center sticky top-0 z-50 transition-all duration-300 px-4 md:px-0">
+    <div className="w-full flex justify-center top-0 z-50 transition-all duration-300 px-4 md:px-0">
       <nav className="w-full md:w-[90%] lg:w-[85%] bg-white/90 backdrop-blur-md rounded-full border-2 border-gray-200 md:rounded-full h-20 md:h-22 mt-4 shadow-[0px_0px_8px_1px] mt-5 shadow-slate-600 p-4 md:px-6 md:py-3 flex items-center justify-between relative transition-all duration-300">
         {/* Logo */}
         <div className="flex items-center gap-3">

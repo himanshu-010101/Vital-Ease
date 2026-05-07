@@ -40,6 +40,7 @@ export async function userLogout() {
         return res.data
     }
     catch (err) {
+        console.log(err)
     }
 }
 
@@ -54,7 +55,8 @@ export async function getUser() {
     try {
         const res = await api.get("/user/getUser")
         return res.data
-    } catch (err) {
+    } catch (err){
+        console.log(err)
     }
 }
 /**

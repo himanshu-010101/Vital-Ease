@@ -6,28 +6,16 @@ const api = axios.create({
 })
 
 export const adminLogin = async ({ userName, password }) => {
-    try {
-        const response = await api.post('/admin/login', { userName, password });
-        return response.data;
-    } catch (error) {
-        throw error;
-    }
+    const response = await api.post('/admin/login', { userName, password });
+    return response.data;
 }
 
 export const adminLogout = async () => {
-    try {
-        const response = await api.get('/admin/logout');
-        return response.data;
-    } catch (error) {
-        throw error;
-    }
+    const response = await api.get('/admin/logout');
+    return response.data;
 }
 
 export const getAdmin = async () => {
-    try {
-        const response = await api.get('/admin/getAdmin')
-        return response.data
-    } catch (error) {
-        throw error
-    }
-}   
+    const response = await api.get('/admin/getAdmin');
+    return response.data;
+}

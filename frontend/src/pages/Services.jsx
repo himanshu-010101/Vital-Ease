@@ -221,32 +221,58 @@ export default function Services() {
             </section>
 
             {/* PROGRAM SECTION */}
-            <section className="bg-linear-to-t from-[#F9B299AA] to-[#F5D0C1AA] py-8">
+            <section className="bg-linear-to-t from-[#F9B299AA] to-[#F5D0C1AA] py-14">
                 <h2 className="text-3xl md:text-4xl px-6 md:ml-15 font-semibold text-left text-orange-600 mb-12 font-heading">
                     Our Other Programmes...
                 </h2>
-                <div className="max-w-7xl mx-auto grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-10 px-6">
-                    {servProg.filter(item => item.type === 'programme').map((program, index) => (
-                        <div
-                            key={index}
-                            className="text-center group flex flex-col justify-center items-center"
-                        >
-                            <div className="w-44 h-44 mx-auto rounded-full overflow-hidden border border-orange-500  shadow-[0px_0px_20px] shadow-[#F7A283B4]">
-                                <img
-                                    src={program.image}
-                                    className="w-full h-full object-cover group-hover:scale-110  transition-transform duration-500"
-                                />
+                <div className="relative overflow-hidden w-full">
+                    <div
+                        className="flex flex-row animate-marquee whitespace-nowrap"
+                    >
+                        {servProg.filter(item => item.type === 'programme').map((program, index) => (
+                            <div
+                                key={index}
+                                className="min-w-[320px] max-w-xs mx-2 text-center group flex flex-col justify-center items-center shrink-0 py-2"
+                            >
+                                <div className="w-44 h-44 mx-auto rounded-full overflow-hidden border border-orange-500 shadow-[0px_0px_20px] shadow-[#F7A283B4]">
+                                    <img
+                                        src={program.image}
+                                        className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500"
+                                    />
+                                </div>
+                                <div className="w-20 flex flex-row justify-center">
+                                    <h3 className="mt-2 text-center mb-3 font-heading text-2xl font-bold text-orange-500 ">
+                                        {program.title}
+                                    </h3>
+                                </div>
+                                <button className="mt-2 px-4 py-1 rounded-full border border-orange-500 text-orange-500 hover:bg-orange-500 hover:text-white shadow-[0px_0px_10px] shadow-orange-500 bg-[#f9a88ab5] w-28 hover:scale-115 transition">
+                                    Enroll Now
+                                </button>
                             </div>
-                            <div className="w-20 flex flex-row justify-center">
-                                <h3 className="mt-2 text-center mb-3 font-heading text-2xl font-bold text-orange-500 ">
-                                    {program.title}
-                                </h3>
+                        ))}
+                        {/* Duplicate for infinite effect */}
+                        {servProg.filter(item => item.type === 'programme').map((program, index) => (
+                            <div
+                                key={"dup-" + index}
+                                className="min-w-[320px] max-w-xs mx-2 text-center group flex flex-col justify-center items-center shrink-0 opacity-70 py-2"
+                            >
+                                <div className="w-44 h-44 mx-auto rounded-full overflow-hidden border border-orange-500 shadow-[0px_0px_20px] shadow-[#F7A283B4]">
+                                    <img
+                                        src={program.image}
+                                        className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500"
+                                    />
+                                </div>
+                                <div className="w-20 flex flex-row justify-center">
+                                    <h3 className="mt-2 text-center mb-3 font-heading text-2xl font-bold text-orange-500 ">
+                                        {program.title}
+                                    </h3>
+                                </div>
+                                <button className="mt-2 px-4 py-1 rounded-full border border-orange-500 text-orange-500 hover:bg-orange-500 hover:text-white shadow-[0px_0px_10px] shadow-orange-500 bg-[#f9a88ab5] w-28 hover:scale-115 transition">
+                                    Enroll Now
+                                </button>
                             </div>
-                            <button className="mt-2 px-4 py-1 rounded-full border border-orange-500 text-orange-500 hover:bg-orange-500 hover:text-white shadow-[0px_0px_10px] shadow-orange-500 bg-[#f9a88ab5] w-28 hover:scale-115 transition">
-                                Enroll Now
-                            </button>
-                        </div>
-                    ))}
+                        ))}
+                    </div>
                 </div>
             </section>
 
