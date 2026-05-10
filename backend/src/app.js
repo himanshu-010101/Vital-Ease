@@ -63,5 +63,8 @@ app.use("/department", departmentRoutes)
 app.use("/appoint", appointmentRoutes)
 app.use("/approved-doctors", approvedDoctorsRoutes)
 app.use("/analytics", analyticsRoutes)
+app.get("/", (req, res) => {
+    res.send("Backend is running");
+});
 
 module.exports = app;
