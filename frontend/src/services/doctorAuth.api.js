@@ -1,7 +1,7 @@
 import axios from 'axios';
 
 const api = axios.create({
-    baseURL: "http://localhost:3000",
+    baseURL: import.meta.env.VITE_BASE_URL,
     withCredentials: true
 })
 
@@ -66,6 +66,7 @@ export async function getDoctor() {
         const res = await api.get("/doctor/get-doctor")
         return res.data
     } catch (err) {
+        console.log(err)
         return null;
     }
 }
@@ -81,6 +82,7 @@ export async function getAllPendingDoctors() {
         const res = await api.get("/doctor/all-pending-doctors")
         return res.data
     } catch (err) {
+        console.log(err)
     }
 }
 
@@ -95,5 +97,6 @@ export async function deletePendingDoctor(id) {
         const res = await api.delete(`/doctor/delete-pending-doctor/${id}`)
         return res.data
     } catch (err) {
+        console.log(err)
     }
 }
